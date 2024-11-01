@@ -428,10 +428,10 @@ body {
 
 #small_square_blue {
   position: fixed;
-  bottom: 35px;
-  right: 85px;
-  width: 25px;
-  height: 25px;
+  bottom: 20px;
+  right: 55px;
+  width: 15px;
+  height: 15px;
   background: #2256aa;
   visibility: hidden;
   animation: wipeInSmallSquareBlue 0.5s linear 2.5s forwards;
@@ -439,10 +439,10 @@ body {
 
 #small_square_black {
   position: fixed;
-  bottom: 35px;
-  right: 35px;
-  width: 25px;
-  height: 25px;
+  bottom: 20px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
   background: #000;
   visibility: hidden;
   animation: wipeInSmallSquareBlack 0.5s linear 2.5s forwards;
@@ -450,10 +450,10 @@ body {
 
 #small_square_red {
   position: fixed;
-  bottom: 20px;
-  right: 35px;
-  width: 25px;
-  height: 25px;
+  bottom: 35px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
   background: #be1e2d;
   visibility: hidden;
   animation: wipeInSmallSquareRed 0.5s linear 2.0s forwards;
@@ -461,10 +461,10 @@ body {
 
 #small_rectangle_black {
   position: fixed;
-  bottom: 20px;
+  bottom: 35px;
   right: 10px;
-  width: 25px;
-  height: 50px;
+  width: 15px;
+  height: 30px;
   background: #000;
   visibility: hidden;
   animation: wipeInSmallRectangleBlack 0.5s linear 1.5s forwards;
@@ -472,10 +472,10 @@ body {
 
 #small_rectangle_red {
   position: fixed;
-  bottom: 110px;
+  bottom: 65px;
   right: 10px;
-  width: 50px;
-  height: 25px;
+  width: 30px;
+  height: 15px;
   background: #be1e2d;
   visibility: hidden;
   animation: wipeInSmallRectangleRed 0.5s linear 1.5s forwards;
@@ -483,10 +483,10 @@ body {
 
 #small_L_upright {
   position: fixed;
-  bottom: 85px;
-  right: 60px;
-  width: 25px;
-  height: 75px;
+  bottom: 50px;
+  right: 40px;
+  width: 15px;
+  height: 45px;
   background: #ffde17;
   visibility: hidden;
   animation: wipeInSmallL_yellow1 0.8s linear 0.2s forwards;
@@ -494,10 +494,10 @@ body {
 
 #small_L_horiz {
   position: fixed;
-  bottom: 85px;
-  right: 35px;
-  width: 25px;
-  height: 25px;
+  bottom: 50px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
   background: #ffde17;
   visibility: hidden;
   animation: wipeInSmallL_yellow2 0.5s linear 1.0s forwards;
@@ -505,10 +505,10 @@ body {
 
 #small_circle_red1 {
   position: fixed;
-  bottom: 35px;
-  right: 70px;
-  width: 25px;
-  height: 25px;
+  bottom: 20px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   z-index: -1;
   background: #be1e2d;
@@ -518,10 +518,10 @@ body {
 
 #small_circle_red2 {
   position: fixed;
-  bottom: 110px;
-  right: 100px;
-  width: 25px;
-  height: 25px;
+  bottom: 65px;
+  right: 55px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   z-index: -1;
   background: #be1e2d;
@@ -531,10 +531,10 @@ body {
 
 #small_circle_blue {
   position: fixed;
-  bottom: 110px;
-  right: 35px;
-  width: 25px;
-  height: 25px;
+  bottom: 80px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   z-index: -1;
   background: #2256aa;
@@ -551,7 +551,7 @@ body {
     visibility: visible;
   }
   to {
-    right: 85px;
+    right: 55px;
     opacity: 1;
     visibility: visible;
   }
@@ -564,7 +564,7 @@ body {
     visibility: visible;
   }
   to {
-    right: 35px;
+    right: 25px;
     opacity: 1;
     visibility: visible;
   }
@@ -577,7 +577,7 @@ body {
     visibility: visible;
   }
   to {
-    bottom: 60px;
+    bottom: 35px;
     opacity: 1;
     visibility: visible;
   }
@@ -590,7 +590,7 @@ body {
     visibility: visible;
   }
   to {
-    bottom: 60px;
+    bottom: 35px;
     opacity: 1;
     visibility: visible;
   }
@@ -616,7 +616,7 @@ body {
     visibility: visible;
   }
   to {
-    bottom: 85px;
+    bottom: 50px;
     opacity: 1;
     visibility: visible;
   }
@@ -624,12 +624,12 @@ body {
 
 @keyframes wipeInSmallL_yellow2 {
   from {
-    right: 60px;
+    right: 40px;
     opacity: 1;
     visibility: visible;
   }
   to {
-    right: 35px;
+    right: 25px;
     opacity: 1;
     visibility: visible;
   }
@@ -637,12 +637,12 @@ body {
 
 @keyframes wipeInSmallCircleRed1 {
   from {
-    right: 85px;
+    right: 55px;
     opacity: 1;
     visibility: visible;
   }
   to {
-    right: 60px;
+    right: 40px;
     opacity: 1;
     visibility: visible;
   }
@@ -650,12 +650,12 @@ body {
 
 @keyframes wipeInSmallCircleRed2 {
   from {
-    right: 60px;
+    right: 40px;
     opacity: 1;
     visibility: visible;
   }
   to {
-    right: 85px;
+    right: 55px;
     opacity: 1;
     visibility: visible;
   }
@@ -663,12 +663,12 @@ body {
 
 @keyframes wipeInSmallCircleBlue {
   from {
-    bottom: 110px;
+    bottom: 65px;
     opacity: 1;
     visibility: visible;
   }
   to {
-    bottom: 135px;
+    bottom: 80px;
     opacity: 1;
     visibility: visible;
   }
