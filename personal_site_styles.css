@@ -193,11 +193,11 @@ body {
     margin-right: 10px; /* Adjust the margin as needed */
   }
   .home {
-    margin-left: 20px; /* Adjust the margin as needed */
+    margin-left: 5px; /* Adjust the margin as needed */
     padding-left: 10px; /* Adjust the padding as needed */
   }
   #home-text {
-    margin-left: 40px;
+    margin-left: 25px;
     padding: 10px;
     font-size: 16px;
     }
@@ -205,7 +205,7 @@ body {
     padding: 10px 20px 0px;
   }
   .image-container img {
-    height: 400px;
+    height: 400px
   }
 }
 
