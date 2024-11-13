@@ -97,6 +97,10 @@ body {
   color: inherit;
 }
 
+#files a:hover {
+  color: #2256aa;
+}
+
 #files h3 {
   padding-top: 20px;
   padding-bottom: 20px;
