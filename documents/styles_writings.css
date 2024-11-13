@@ -1,0 +1,712 @@
+/* Inter Extralight as default for body */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  font-size: 11pt;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+
+/* Navbar container */
+#navbar {
+  display: flex;
+  align-items: center;  
+  padding: 10px 20px 40px;
+  justify-content: space-between;
+}
+
+/* Align the home section to the left */
+.home {
+  list-style: none;
+}
+
+/* Style for home and navlist links */
+.home li a, 
+.navlist li a {
+  text-decoration: none; 
+  font-weight: bold;        
+  color: #000; 
+  transition: color 0.3s ease;     
+}
+
+/* Hover effects for all links */
+.home li a:hover, 
+.navlist li a:hover {
+  color: #007ACC;
+}
+
+/* Center the navlist */
+.navlist {
+  display: flex;   
+  list-style-type: none;    
+  padding: 0;
+  margin: 0;
+}
+
+/* Optional: Add margin to each navlink in .navlist */
+.navlist li {
+  margin-left: 60px;      
+}
+
+.navlist li:last-child {
+  margin-right: 40px;   
+}
+
+#home-text {
+  margin-left: 40px;     
+  padding: 20px;  
+  font-size: 16px;  
+}
+
+
+
+
+/* ANIMATION */
+
+
+.writings_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.halfpage {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+#files {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+  
+.document {
+  margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#files a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#files a:hover {
+  color: #2256aa;
+}
+
+#files h3 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+}
+
+.rectangleV {
+  width: 100px;
+  height: 200px;
+  border-radius: 0%;
+
+}
+
+.rectangleH {
+  width: 200px;
+  height: 100px;
+  border-radius: 0%;
+}
+
+.Lupright {
+  width: 100px;
+  height: 300px;
+  border-radius: 0%;
+  background-color: #ffde17;
+}
+
+.Lacross {
+  width: 100px;
+  height: 100px;
+  border-radius: 0%;
+  background-color: #ffde17;
+}
+
+
+
+
+#square_blue {
+  position: fixed;
+  bottom: 100px;
+  left: 100px;
+  background: #2256aa;
+  visibility: hidden;
+  animation: wipeInSquareBlack 0.5s linear 2.5s forwards;
+}
+
+
+#square_black {
+  position: fixed;
+  bottom: 100px;
+  left: 300px;
+  background: #000;
+  visibility: hidden;
+  animation: wipeInSquareBlack 0.5s linear 2.5s forwards;
+
+}
+
+#square_red {
+  position: fixed;
+  bottom: 200px;
+  left: 300px;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInSquareRed 0.5s linear 2.0s forwards;
+}
+
+#rectangle_black {
+  position: fixed;
+  bottom: 200px;
+  left: 400px;
+  background: #000;
+  visibility: hidden;
+  animation: wipeInRectangleBlack 0.5s linear 1.5s forwards;
+}
+
+#rectangle_red {
+  position: fixed;
+  bottom: 400px;
+  left: 300px;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInRectangleRed 0.5s linear 1.5s forwards;
+}
+
+#L_upright {
+  position: fixed;
+  bottom: 300px;
+  left: 200px;
+  visibility: hidden;
+  animation: wipeInL_yellow1 0.8s linear 0.2s forwards;
+}
+
+#L_horiz {
+  position: fixed;
+  bottom: 300px;
+  left: 300px;
+  visibility: hidden;
+  animation: wipeInL_yellow2 0.5s linear 1.0s forwards;
+}
+
+#circle_red1 {
+  position: fixed;
+  bottom: 100px;
+  left: 200px;
+  z-index: -1;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInCircleRed1 0.5s linear 3.1s forwards;
+}
+
+#circle_red2 {
+  position: fixed;
+  bottom: 400px;
+  left: 100px;
+  z-index: -1;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInCircleRed2 0.5s linear 3.1s forwards;
+}
+
+#circle_blue {
+  position: fixed;
+  bottom: 500px;
+  left: 300px;
+  z-index: -1;
+  background: #2256aa;
+  visibility: hidden;
+  animation: wipeInCircleBlue 0.5s linear 3.1s forwards;
+}
+
+
+
+/* Keyframes */
+@keyframes wipeInSquareBlue {
+  from {
+    left: -100px;
+    opacity: 1;
+    visibility: visible;
+       
+  }
+  to {
+    left: 100px;
+    opacity: 1;
+    visibility: visible;
+
+  }
+}
+
+@keyframes wipeInSquareRed {
+  from {
+    left: -100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSquareBlack {
+  from {
+    bottom: -100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 100px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInRectangleBlack {
+  from {
+    bottom: -200px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 200px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInRectangleRed {
+  from {
+    left: 33vw;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@keyframes wipeInL_yellow1 {
+  from {
+    bottom: 1000px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@keyframes wipeInL_yellow2 {
+  from {
+    left: 200px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    left: 300px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+@keyframes wipeInCircleBlue {
+  from {
+    bottom: 400px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 500px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInCircleRed1 {
+  from {
+    left: 100px;    
+    opacity: 1;       
+    visibility: visible;
+  }
+  to {
+    left: 200px;   
+    opacity: 1;     
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInCircleRed2 {
+  from {
+    left: 200px;   
+    opacity: 1;       
+    visibility: visible;
+  }
+  to {
+    left: 100px;      
+    opacity: 1;       
+    visibility: visible;
+  }
+}
+
+
+
+/* small animation */
+
+
+@media (max-width: 1100px) {
+  #square_blue,
+  #square_black,
+  #square_red,
+  #rectangle_black,
+  #rectangle_red,
+  #L_upright,
+  #L_horiz,
+  #circle_red1,
+  #circle_red2,
+  #circle_blue {
+    display: none;
+  }
+  .writings_container {
+    flex-direction: column;
+  }
+  #files {
+    min-width: 360px;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  }
+
+@media (min-width: 1101px) {
+  #small_square_blue,
+  #small_square_black,
+  #small_square_red,
+  #small_rectangle_black,
+  #small_rectangle_red,
+  #small_L_upright,
+  #small_L_horiz,
+  #small_circle_red1,
+  #small_circle_red2,
+  #small_circle_blue {
+    display: none;
+  }
+  #files {
+    min-width: 520px;
+    max-width: 520px;
+  }
+}
+
+
+#small_square_blue {
+  position: fixed;
+  bottom: 20px;
+  right: 55px;
+  width: 15px;
+  height: 15px;
+  background: #2256aa;
+  visibility: hidden;
+  animation: wipeInSmallSquareBlue 0.5s linear 2.5s forwards;
+}
+
+#small_square_black {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  visibility: hidden;
+  animation: wipeInSmallSquareBlack 0.5s linear 2.5s forwards;
+}
+
+#small_square_red {
+  position: fixed;
+  bottom: 35px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInSmallSquareRed 0.5s linear 2.0s forwards;
+}
+
+#small_rectangle_black {
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  width: 15px;
+  height: 30px;
+  background: #000;
+  visibility: hidden;
+  animation: wipeInSmallRectangleBlack 0.5s linear 1.5s forwards;
+}
+
+#small_rectangle_red {
+  position: fixed;
+  bottom: 65px;
+  right: 10px;
+  width: 30px;
+  height: 15px;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInSmallRectangleRed 0.5s linear 1.5s forwards;
+}
+
+#small_L_upright {
+  position: fixed;
+  bottom: 50px;
+  right: 40px;
+  width: 15px;
+  height: 45px;
+  background: #ffde17;
+  visibility: hidden;
+  animation: wipeInSmallL_yellow1 0.8s linear 0.2s forwards;
+}
+
+#small_L_horiz {
+  position: fixed;
+  bottom: 50px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  background: #ffde17;
+  visibility: hidden;
+  animation: wipeInSmallL_yellow2 0.5s linear 1.0s forwards;
+}
+
+#small_circle_red1 {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInSmallCircleRed1 0.5s linear 3.1s forwards;
+}
+
+#small_circle_red2 {
+  position: fixed;
+  bottom: 65px;
+  right: 55px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #be1e2d;
+  visibility: hidden;
+  animation: wipeInSmallCircleRed2 0.5s linear 3.1s forwards;
+}
+
+#small_circle_blue {
+  position: fixed;
+  bottom: 80px;
+  right: 25px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: -1;
+  background: #2256aa;
+  visibility: hidden;
+  animation: wipeInSmallCircleBlue 0.5s linear 3.1s forwards;
+}
+
+
+
+@keyframes wipeInSmallSquareBlue {
+  from {
+    right: -50px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 55px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallSquareBlack {
+  from {
+    right: -50px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 25px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallSquareRed {
+  from {
+    bottom: -50px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 35px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallRectangleBlack {
+  from {
+    bottom: -100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 35px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallRectangleRed {
+  from {
+    right: -100px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallL_yellow1 {
+  from {
+    bottom: -130px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallL_yellow2 {
+  from {
+    right: 40px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 25px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallCircleRed1 {
+  from {
+    right: 55px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 40px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallCircleRed2 {
+  from {
+    right: 40px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    right: 55px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes wipeInSmallCircleBlue {
+  from {
+    bottom: 65px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 80px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+
+
+
+
+/* Media query to edit navbar for mobile screens */
+@media (max-width: 499px) {
+  .navlist li {
+    margin-left: 20px; /* Adjust the margin as needed */
+  }
+  .navlist li:last-child {
+    margin-right: 10px; /* Adjust the margin as needed */
+  }
+  .home {
+    margin-left: 5px; /* Adjust the margin as needed */
+    padding-left: 10px; /* Adjust the padding as needed */
+  }
+  #home-text {
+    margin-left: 25px;
+    padding: 10px;
+    font-size: 16px;
+    }
+  #navbar {      
+    padding: 10px 20px 0px;
+  }
+  #files h3 {
+    padding-top: 0px;
+  }
+  .halfpage {
+    padding-top: 0px;
+  }
+}
