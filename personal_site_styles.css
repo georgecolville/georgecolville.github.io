@@ -108,19 +108,22 @@ body {
   }
 }
 
-/* For viewports under 800px */
+/* For viewports under 740px */
 @media (max-width: 740px) {
   .container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
+    grid-auto-rows: auto;
     grid-row-gap: 10px;
     max-width: 300px;
     /*max-height: 400px;*/
   }
-}
 
+  #about_text,
+  #about_text2 {
+    padding-left: 20px;
+  }
+}
 
 #about_text,
 #about_text2 {
