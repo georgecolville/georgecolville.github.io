@@ -736,3 +736,7 @@ body {
 #circle_red1,     #small_circle_red1,
 #circle_red2,     #small_circle_red2,
 #circle_blue,     #small_circle_blue     { --s: 0.861; --e: 1; }
+
+/* Clickable circle */
+#circle_red1,
+#small_circle_red1 { cursor: pointer; }
