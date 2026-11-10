@@ -739,4 +739,7 @@ body {
 
 /* Clickable circle */
 #circle_red1,
-#small_circle_red1 { cursor: pointer; }
+#small_circle_red1 {
+  cursor: pointer;
+  z-index: 1;
+}
