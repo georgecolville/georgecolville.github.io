@@ -71,6 +71,7 @@ body {
 .writings_container {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 60px;
 }
 
 .halfpage {
@@ -400,6 +401,7 @@ body {
   }
   .writings_container {
     flex-direction: column;
+    padding-bottom: 120px;
   }
   #files {
     min-width: 360px;
