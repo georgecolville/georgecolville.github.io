@@ -681,7 +681,11 @@ body {
 }
 
 
-
+@media (max-width: 600px) {
+  .document {
+    margin-right: 65px;
+  }
+}
 
 
 
