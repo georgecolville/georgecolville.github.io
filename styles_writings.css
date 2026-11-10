@@ -711,28 +711,28 @@ body {
   }
 }
 
-@supports (animation-timeline: scroll()) {
-  #bauhaus_animation {
-    --k: 0.9; /* finish at 90% of the scroll; set to 1 to finish at the very bottom */
-  }
-
-  #bauhaus_animation > * {
-    animation-timeline: scroll(root);
-    animation-duration: auto;
-    animation-delay: 0s;
-    animation-range: calc(var(--s) * var(--k) * 1%) calc(var(--e) * var(--k) * 1%);
-  }
-
-  /* --s / --e = start / end of each shape's slot, as a % of the total
-     sequence (your old delay and delay + duration, out of 3.6s) */
-  #L_upright,         #small_L_upright         { --s: 5;  --e: 25; }
-  #L_horiz,           #small_L_horiz           { --s: 25; --e: 40; }
-  #rectangle_black,   #small_rectangle_black,
-  #rectangle_red,     #small_rectangle_red     { --s: 40; --e: 55; }
-  #square_red,        #small_square_red        { --s: 55; --e: 70; }
-  #square_blue,       #small_square_blue,
-  #square_black,      #small_square_black      { --s: 70; --e: 85; }
-  #circle_red1,       #small_circle_red1,
-  #circle_red2,       #small_circle_red2,
-  #circle_blue,       #small_circle_blue       { --s: 85; --e: 100; }
+#bauhaus_animation {
+  --p: 0; /* scroll progress, 0 to 1, set by the script */
 }
+
+/* Freeze each animation and use a negative delay to scrub it to its
+   share of the overall progress. Your keyframes are untouched. */
+#bauhaus_animation div {
+  animation-duration: 1s;
+  animation-play-state: paused;
+  animation-fill-mode: forwards;
+  animation-delay: calc(-1s * (var(--p) - var(--s)) / (var(--e) - var(--s)));
+}
+
+/* --s / --e: where each shape starts and finishes, as a fraction of the
+   whole scroll (0 = top, 1 = done). Edit these to retime anything. */
+#L_upright,       #small_L_upright       { --s: 0.056; --e: 0.278; }
+#L_horiz,         #small_L_horiz         { --s: 0.278; --e: 0.417; }
+#rectangle_black, #small_rectangle_black,
+#rectangle_red,   #small_rectangle_red   { --s: 0.417; --e: 0.556; }
+#square_red,      #small_square_red      { --s: 0.556; --e: 0.694; }
+#square_blue,     #small_square_blue,
+#square_black,    #small_square_black    { --s: 0.694; --e: 0.833; }
+#circle_red1,     #small_circle_red1,
+#circle_red2,     #small_circle_red2,
+#circle_blue,     #small_circle_blue     { --s: 0.861; --e: 1; }
