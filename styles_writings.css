@@ -726,16 +726,16 @@ body {
 
 /* --s / --e: where each shape starts and finishes, as a fraction of the
    whole scroll (0 = top, 1 = done). Edit these to retime anything. */
-#L_upright,       #small_L_upright       { --s: 0.056; --e: 0.278; }
-#L_horiz,         #small_L_horiz         { --s: 0.278; --e: 0.417; }
+#L_upright,       #small_L_upright       { --s: -1; --e: 0; }
+#L_horiz,         #small_L_horiz         { --s: 0;     --e: 0.192; }
 #rectangle_black, #small_rectangle_black,
-#rectangle_red,   #small_rectangle_red   { --s: 0.417; --e: 0.556; }
-#square_red,      #small_square_red      { --s: 0.556; --e: 0.694; }
+#rectangle_red,   #small_rectangle_red   { --s: 0.192; --e: 0.385; }
+#square_red,      #small_square_red      { --s: 0.385; --e: 0.577; }
 #square_blue,     #small_square_blue,
-#square_black,    #small_square_black    { --s: 0.694; --e: 0.833; }
+#square_black,    #small_square_black    { --s: 0.577; --e: 0.769; }
 #circle_red1,     #small_circle_red1,
 #circle_red2,     #small_circle_red2,
-#circle_blue,     #small_circle_blue     { --s: 0.861; --e: 1; }
+#circle_blue,     #small_circle_blue     { --s: 0.808; --e: 1; }
 
 /* Clickable circle */
 #circle_red1,
